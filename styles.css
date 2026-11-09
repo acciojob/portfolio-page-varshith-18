@@ -1,2 +1,203 @@
 
 /* Your CSS Code here. */
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Home section */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-bottom: 25px;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#home h1 span {
+    color: #38bdf8;
+}
+
+#home h3 {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+.linkedin {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.linkedin:hover {
+    background-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* Skills section */
+#skills {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #1e293b;
+}
+
+#skills h2,
+#projects h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #38bdf8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #334155;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #0284c7;
+    transform: translateY(-5px);
+}
+
+/* Projects section */
+#projects {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1e293b;
+    color: #94a3b8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
